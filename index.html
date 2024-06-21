@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XSHOP</title>
+    <link rel="stylesheet" href="/assets/css/output.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+
+</head>
+<body class="bg-TX01 dark:bg-TX9" data-aos-easing="ease-in-out" data-aos-duration="1000" >
+    <header id="topHeader" class=" z-50 right-0 left-0 top-0 transition-all dark:bg-b1 bg-b4 w-full flex flex-row">
+        <div class="flex justify-between items-center gap-10 py-6 w-4/5 m-auto flex-wrap">
+            <img src="assets/img2/1714360372884aehj5tnf-removebg-preview.png" class="md:h-32 h-20" alt="">
+            <p class="text-3xl font-bold flex-[1.5] text-white ">XSHOP</p>
+            <div class="md:hidden block" onclick="showHideMenu()">
+                <i class="bx bx-menu text-4xl"></i>
+            </div>
+            <div id="menu"
+                class="hidden md:flex flex-col md:flex-row basis-auto grow justify-between items-start md:items-center gap-5 md:gap-0">
+                <nav>
+                    <ul class="flex flex-col md:flex-row gap-8 capitalize py-">
+                        <li><a href="home.html" class="text-lg font-bold text-grey-600 text-white hover:text-black">Home</a></li>
+                        <li><a href="shop.html" class="text-lg font-bold text-grey-600 text-white hover:text-black">Shop</a></li>
+                        <li><a href="about.html" class="text-lg font-bold text-grey-600 text-white hover:text-black">About</a></li>
+                        <li><a href="blog.html" class="text-lg font-bold text-grey-600 text-white hover:text-black">Blogs</a></li>
+                        <div class="relative inline-block text-left">
+                            <button id="menu-button" class="text-lg font-bold text-white dark:text-white focus:outline-none focus:ring focus:ring-opacity-50 lg:w-auto w-full">
+                                More <i class='bx bx-chevron-down'></i>
+                            </button>
+                            <div id="dropdown-menu" class="absolute right-0 hidden mt-2 bg-white  dark:bg-gray-800 rounded-md shadow-lg z-50" style="width: 150%; max-width: 18rem;">
+                                <a href="trendingHome.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">Tranding home</a>
+                                <a href="shopdetail.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">shop detail</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">account</a>
+                            </div>
+                        </div>
+                        <script>
+                            document.getElementById('menu-button').addEventListener('click', function() {
+                                var dropdown = document.getElementById('dropdown-menu');
+                                if (dropdown.classList.contains('hidden')) {
+                                    dropdown.classList.remove('hidden');
+                                    dropdown.classList.add('block');
+                                } else {
+                                    dropdown.classList.add('hidden');
+                                    dropdown.classList.remove('block');
+                                }
+                            });
+                        </script>
+                    </ul>
+                </nav>
+                <a href=""><img src="assets/img2/cp-icon-user.png" alt="" class="pt-7 md:pt-0 md:ml-36">
+                </a>
+                <button
+                    class="bg-f3 hover:ring hover:ring-sky-900 rounded-xl transition-all font-bold py-2 px-6 duration-200 shadow-md md:shadow-lg md:mt-0 mt-5 md:w-32 w-full md:bg-white bg-white">sign
+            </div>
+    </header>
+    
+        <div class="p-1 rounded-full fixed bottom-4 left-4 z-2 bg-df2 dark:bg-white ring bg-white" onclick="switchDark()">
+            <i id="iconDark" class="bx bxs-ghost text-4xl text-b1"></i>
+        </div>
+        
+            
+
+        <section id="jumbotron" class="bg-bgl dark:bg-bdg1 bg-cover min-h-screen w-full">
+            <div class="w-full md:w-[80%] h-[70%] bg-gray-300 md:ml-48 mt-20 md:mt-40 flex justify-center items-center flex-col rounded-xl dark:bg-TX10">
+                    <h4 class="text-center font-bold text-black mb-5 mt-6 text-xl dark:text-white" data-aos="zoom-in" data-aos-duration="1000">The beast</h4>
+                    <h4 class="text-center font-bold text-black mb-4 text-3xl md:text-5xl dark:text-white" data-aos="fade-up" data-aos-duration="1000">T-shirt</h4>
+                    <h1 class="text-center text-6xl md:text-9xl font-bold text-white dark:text-white" data-aos="zoom-in-right" data-aos-duration="1000">BRANDED</h1>
+                    <img src="assets/img/image 37.png" alt="" data-aos="zoom-in" data-aos-duration="1000">
+                    <a href="shop.html"><button
+                        class="bg-TX1 w-36 h-10 rounded-2xl font-semibold mb-10 md:mb-28" data-aos="fade-up" data-aos-duration="1000">show in shop
+                        </button></a>
+                </div>
+        </section>
+    </main>
+    <section class="w-full h-full">
+      <div class="flex flex-col md:flex-row gap-4 md:gap-4 ml-4 md:ml-14 mt-4 md:mt-10">
+        <div class="h-[320px] md:w-80 w-full bg-black rounded-xl shadow-lg ">
+          <img src="assets/img/image 35.png" alt="" class="mx-auto py-8">
+          <div class="text-center -mt-40 gap-8">
+            <p class="text-xl font-bold text-TX8">Use</p>
+            <p class="text-2xl font-semibold text-white">with</p>
+            <p class="text-4xl font-semibold text-TX5">T-shirt white</p>
+            <button class="bg-TX1 w-36 h-10 rounded-2xl font-semibold mt-4">Browse</button>
+          </div>
+        </div>
+        <div class="h-[320px] md:w-80 w-full bg-TX3 rounded-xl">
+          <img src="assets/img/image 40.png" alt="" class="mx-auto py-8">
+          <div class="text-center -mt-40 gap-8">
+            <p class="text-xl font-bold text-TX8">Use</p>
+            <p class="text-2xl font-semibold text-white">with</p>
+            <p class="text-4xl font-semibold text-TX5">T-shirt Green</p>
+            <button class="bg-TX1 w-36 h-10 rounded-2xl font-semibold mt-6">Browse</button>
+          </div>
+        </div>
+        <div class="h-[320px] md:w-1/2 w-full bg-TX4 rounded-xl">
+          <img src="assets/img/image 59.png" alt="" class="mx-auto py-8">
+          <div class="text-center -mt-40 gap-8">
+            <p class="text-xl font-bold text-TX8">Use</p>
+            <p class="text-2xl font-semibold text-white">with</p>
+            <p class="text-4xl font-semibold text-TX5">T-shirt Blue</p>
+            <button class="bg-white w-36 h-10 rounded-2xl font-semibold mt-4">Browse</button>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row gap-12 ml-4 md:ml-14 mt-4 md:mt-10">
+        <div class="h-[320px] md:w-1/2 w-full bg-TX5 rounded-xl">
+          <img src="assets/img/image 82.png" alt="" class="mx-auto py-8">
+          <div class="text-center -mt-48 gap-8">
+            <p class="text-xl font-bold text-gray-400">Use</p>
+            <p class="text-2xl font-semibold text-white">with</p>
+            <p class="text-4xl font-semibold text-gray-400">T-shirt Gray</p>
+            <button class="bg-white w-36 h-10 rounded-2xl font-semibold mt-4">Browse</button>
+          </div>
+        </div>
+        <div class="h-[320px] md:w-80 w-full bg-TX6 rounded-xl">
+          <img src="assets/img/image 36 (1).png" alt="" class="mx-auto py-8">
+          <div class="text-center -mt-40 gap-8">
+            <p class="text-xl font-bold text-TX8">Use</p>
+            <p class="text-2xl font-semibold text-white">with</p>
+            <p class="text-4xl font-semibold text-TX5">T-shirt Light blue</p>
+            <button class="bg-TX1 w-36 h-10 rounded-2xl font-semibold mt-6">Browse</button>
+          </div>
+        </div>
+        <div class="h-[320px] md:w-80 w-full bg-TX7 rounded-xl">
+          <img src="assets/img/image 57.png" alt="" class="mx-auto py-8 ">
+          <div class="text-center -mt-40 gap-8">
+            <p class="text-xl font-bold text-TX8">Use</p>
+            <p class="text-2xl font-semibold text-white">with</p>
+            <p class="text-4xl font-semibold text-TX5">T-shirt Black</p>
+            <button class="bg-TX1 w-36 h-10 rounded-2xl font-semibold mt-4">Browse</button>
+          </div>
+        </div>
+      </div>
+  
+    </section>
+   
+    <section class="w-full h-full">
+
+        <div class="w-full md:w-[95rem] md:h-[400px] h-[550px] bg-TX1 rounded-xl ml-2 md:ml-24 mt-32">    
+            <div class="ml-4 md:ml-32 py-16">          
+                <p class="text-md md:text-lg font-semibold text-white" >30% OFF</p>
+                <h2 class="text-5xl md:text-4xl lg:text-6xl font-bold text-white">FINE SMILE</h2>
+                <h4 class="text-sm md:text-lg lg:text-xl font-semibold text-white">10 Jan to 28 jan</h4>            
+            </div> 
+        </div>
+          
+        <div class="ml-10 md:ml-20 lg:ml-[80rem] -mt-40 lg:-mt-56">
+            <p class="text-lg md:text-lg lg:text-xl font-semibold text-white" >30% OFF</p>
+            <h2 class="text-2xl md:text-3xl lg:text-5xl font-semibold text-white" >FINE SMILE</h2>
+            <h4 class="text-lg md:text-lg lg:thext-xl font-semibold text-white" >10 Jan to 28 jan</h4>
+            <button class="bg-white w-24 md:w-24 lg:w-36 h-8 md:h-8 lg:h-10 rounded-2xl font-semibold mt-2 md:mt-2 lg:mt-4" >Browse</button>
+        </div>
+        <div class="ml-32 md:px-[7rem] lg:ml-[38rem] -mt-[25rem] lg:-mt-80">
+            <img src="assets/img/image 57 (1).png" alt="" class="w-full max-w-xs md:w- lg:w-[30rem]">
+        </div>
+    </section>
+      <section class="w-full h-full">
+        <div class="max-w-7xl mx-auto p-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:mt-28 mt-56">
+            <!-- Product Card 1 -->
+            <div class="bg-white p-4 rounded-lg shadow dark:bg-TX10">
+                <div class="relative">
+                    <span class="absolute top-2 left-2 bg-TX1 text-white text-xs uppercase font-bold px-2 py-1">New</span>
+                    <img src="assets/img/kaos.png" alt="Round Table Clock" class="w-full h-48 object-cover rounded-lg">
+                </div>
+                <div class="mt-4 text-center">
+                    <h3 class="text-lg font-semibold dark:text-white">Round Table Clock</h3>
+                    <p class="text-gray-500">Green</p>
+                    <p class="mt-2 text-gray-800 font-bold  dark:text-white">$44.00</p>
+                </div>
+            </div>
+            <!-- Product Card 2 -->
+            <div class="bg-white p-4 rounded-lg shadow dark:bg-TX10">
+                <div class="relative">
+                    <span class="absolute top-2 left-2 bg-TX1 text-white text-xs uppercase font-bold px-2 py-1">New</span>
+                    <img src="assets/img/koass2.png" alt="Smart Watch" class="w-full h-48 object-cover rounded-lg">
+                </div>
+                <div class="mt-4 text-center">
+                    <h3 class="text-lg font-semibold  dark:text-white">Smart Watch</h3>
+                    <p class="text-gray-500">Blue love</p>
+                    <p class="mt-2 text-gray-800 font-bold  dark:text-white">$250.00</p>
+                </div>
+            </div>
+            <!-- Product Card 3 -->
+            <div class="bg-white p-4 rounded-lg shadow dark:bg-TX10">
+                <div class="relative">
+                    <span class="absolute top-2 left-2 bg-TX1 text-white text-xs uppercase font-bold px-2 py-1">New</span>
+                    <img src="assets/img/kaoss3.png" alt="Cloth Basket" class="w-full h-48 object-cover rounded-lg">
+                </div>
+                <div class="mt-4 text-center">
+                    <h3 class="text-lg font-semibold  dark:text-white">Cloth Basket</h3>
+                    <p class="text-gray-500">Green new</p>
+                    <p class="mt-2 text-gray-800 font-bold  dark:text-white">$80.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+      </section>
+  <section class="w-full h-full">
+        <div class="w-full md:w-[95rem] h-[550px] bg-TX6 rounded-xl  md:ml-24 md:mt-36 mt-20">    
+            <div class="ml-4 md:ml-32 py-16 md:mt-16">          
+                <p class="text-md md:text-lg font-semibold text-white" >30% OFF</p>
+                <h2 class="text-5xl md:text-4xl lg:text-6xl font-bold text-white" >FINE SMILE</h2>
+                <h4 class="text-md md:text-xl font-semibold text-white" >10 Jan to 28 jan</h4>            
+            </div> 
+        </div>
+          
+        <div class="ml-10 md:ml-20 lg:ml-[80rem] -mt-40 lg:-mt-56">
+            <p class="text-md md:text-lg font-semibold text-white" >30% OFF</p>
+            <h2 class="text-2xl md:text-5xl font-semibold text-white" >FINE SMILE</h2>
+            <h4 class="text-md md:text-xl font-semibold text-white" >10 Jan to 28 jan</h4>
+            <button class="bg-white w-24 md:w-36 h-8 md:h-10 rounded-2xl font-semibold mt-2 md:mt-4" >Browse</button>
+        </div>
+        <div class="ml-20 md:px-[35rem] md:mb-80 -mt-[22rem]" >
+            <img src="assets/img/image 50.png" alt="" class="w-[14rem] md:w-[28rem]">
+        </div>
+        </div>
+    </section>  
+            
+        
+        
+
+    </div>
+    <footer class="flex flex-col w-full md:h-[50vh] h-[70vh] bg-black mt-52">
+        <section class="flex justify-center items-center w-full h-5/6">
+            <div class="flex flex-col md:flex-row md:justify-evenly items-center md:w-[75%] w-full">
+                <div class="flex flex-col gap-4 items-center md:items-start md:w-4/5 w-full mb-10">
+                    <h5 class="text-3xl font-bold text-white dark:text-white">Get In Touch</h5>
+                    <p class="text-md text-slate-400">the quick fox jumps over the
+                        lazy dogg</p>
+                    <div class="flex gap-4 justify-center">
+                        <a href=""><img src="assets/img/cp-icon-fb.png" alt=""></a>
+                        <a href=""><img src="assets/img/cp-icon-ig.png" alt=""></a>
+                     <a href="">   <img src="assets/img/cp-icon-twitter.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="md:w-3/5 w-full flex md:justify-evenly gap-5 md:p-0 p-8">
+                    <div class="flex flex-col w-1/2 justify-center md:justify-start md:w-1/3 gap-3">
+                        <h6 class="text-lg font-bold dark:text-white">Company info</h6>
+                        <ul class="flex flex-col gap-1 text-md text-white">
+                            <li>About Us</li>
+                            <li>Carrier</li>
+                            <li>We are hiring</li>
+                            <li>Blog</li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col md:w-1/3 w-1/2 justify-center md:justify-start gap-3">
+                        <h6 class="text-lg font-bold dark:text-white">Company info</h6>
+                        <ul class="flex flex-col gap-1 text-md text-white">
+                            <li>About Us</li>
+                            <li>Carrier</li>
+                            <li>We are hire</li>
+                            <li>Blog</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="w-full h-1/6 bg-f4 flex justify-center items-center dark:bg-bdg2">
+            <p class="text-slate-500 dark:text-white">Made With Loving By IDRISJR All Rttight Reserved</p>
+        </section>
+    </footer>
+    
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
+    <script src="OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.min.js"></script>
+    <script>
+     $(document).ready(function () {
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                items: 4,
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 1000,
+                autoplayHoverPause: true
+            });
+        });
+
+        function switchDark(){
+           const swicth = document.documentElement.classList.toggle('dark');
+           console.log(swicth)
+           if(swicth === true ) {
+            document.getElementById("iconDark").classList.add("bxs-ghost")
+            document.getElementById("iconDark"  ).classList.remove("bx-ghost")
+           } else {
+            document.getElementById("iconDark").classList.add("bx-ghost")
+            document.getElementById("iconDark").classList.remove("bxs-ghost")
+           }
+        }
+
+        window.onscroll = function () {
+            menu()
+        };
+
+        var xstatus = false;
+            function showHideMenu() {
+                if (!xstatus) {
+                    document.getElementById("menu").classList.remove("hidden");
+                    document.getElementById("menu").classList.add("flex");
+                    if (document.documentElement.scrollTop < 60) {
+                        document.getElementById("topHeader").classList.add("shadow-lg");
+                    }
+                    xstatus = true;
+                } else {
+                    document.getElementById("menu").classList.remove("flex");
+                    document.getElementById("menu").classList.add("hidden");
+                    if (document.documentElement.scrollTop < 60) {
+                        document.getElementById("topHeader").classList.remove("shadow-lg");
+                    }
+                    xstatus = false;
+                }
+            }
+
+        
+        function switcDark() {
+            const mode = document.documentElement.classList.toggle('dark');
+            console.log(mode);
+            if (mode === true) {
+                document.getElementById('iconDark').classList.add("bxs-sun");
+                document.getElementById('iconDark').classList.remove("bxs-moon");
+
+            }
+            else {
+                document.getElementById('iconDark').classList.add("bxs-moon");
+                document.getElementById('iconDark').classList.remove("bxs-sun");
+            }
+
+        };
+
+        function switchDark(){
+           const swicth = document.documentElement.classList.toggle('dark');
+           console.log(swicth)
+           if(swicth === true ) {
+            document.getElementById("iconDark").classList.add("bxs-ghost")
+            document.getElementById("iconDark"  ).classList.remove("bx-ghost")
+           } else {
+            document.getElementById("iconDark").classList.add("bx-ghost")
+            document.getElementById("iconDark").classList.remove("bxs-ghost")
+           }
+        }
+            
+
+    </script>
+
+
+
+</body>
+</html>
